@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yang.headsupblock">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="屏蔽掉TIM的横幅通知，状态栏正常显示。\nThis module blocks all heads-up notifications from TIM while they will still be shown on the status bar.\n不是所有手机都自带了“屏蔽横幅通知”的功能，而TIM无法单独设置禁止横幅，所以对于这类手机，要么同时允许弹横幅和状态栏显示通知，要么同时禁止。该模块旨在帮助这样的群体，他们希望收到TIM新消息通知，但很讨厌弹横幅。" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82" />
+
+    </application>
+</manifest>
